@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/hospital.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+    body
+    {
+        background-image: url("{{url_for('static',filename='pinkribbon.jpg')}}");
+    }
+    .container-fluid{
+        background-color:pink;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href= "index.html">DoctorAI</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+               
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="hospitals">
+            <h2>Hospital Recomendations</h2>
+          </div>
+          <div class="list">
+              <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    Hospitals For Lung Cancer
+                  </button>
+                </p>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 400px;">
+                      <a href="https://www.fmri.in/appointment/?gclid=EAIaIQobChMI5pvUy77V_AIVzpNmAh0hmQOmEAAYASAAEgJ_h_D_BwE"> -> Fortis Hospital Gurgaon.</a>
+                      <a href=""> -> Max Super Speciality Hospital, Saket, New Delhi.</a>
+                      <a href=""> -> Indraprastha Apollo Hospital New Delhi.</a>
+                      <a href=""> -> BLK Super Specialty Hospital New Delhi.</a>
+                      <a href=""> -> Wockhardt Hospitals, Mumbai Central.</a>
+                      <a href=""> -> Global Hospital Chennai</a>
+                      <a href=""> -> MGM Healthcare, Chennai.</a>
+                      <a href=""> -> Artemis Hospital Gurgaon</a>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample2">
+                    Hospitals For Breast Cancer
+                  </button>
+                </p>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                    <div class="card card-body" style="width: 400px;">
+                      <a href=""> -> Fortis Hospital Gurgaon.</a>
+                      <a href=""> -> Max Super Speciality Hospital, Saket, New Delhi.</a>
+                      <a href=""> -> Indraprastha Apollo Hospital New Delhi.</a>
+                      <a href=""> -> Narayana Superspeciality Hospital, Gurgaon.</a>
+                      <a href=""> -> Medanta - The Medicity Hospital, Gurgaon.</a>
+                      <a href=""> -> Manipal Hospital Whitefield Formerly Columbia Asia Bangalore.</a>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                    Hospitals For Skin Cancer
+                  </button>
+                </p>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                    <div class="card card-body" style="width: 400px;">
+                      <a href=""> -> Fortis Hospital Gurgaon.</a>
+                      <a href=""> -> Max Super Speciality Hospital, Saket, New Delhi.</a>
+                      <a href=""> -> Indraprastha Apollo Hospital New Delhi.</a>
+                      <a href=""> -> Nanavati hospital.</a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
